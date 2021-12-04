@@ -3,7 +3,7 @@ coding=utf-8
 #coding=utf-8
 try:
     import os,re,time
-    
+    except IOError:
     	os.system("pip2 install requests")
     os.system("pip2 install mechanize")
     os.system("python2 Zsasi.py")
