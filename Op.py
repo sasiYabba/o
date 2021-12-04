@@ -1,20 +1,21 @@
-coding=utf-8
+#coding=utf-8
 #!/usr/bin/python2
 #coding=utf-8
 try:
     import os,re,time
-    except IOError:
-    	os.system("pip2 install requests")
+except IOError:
+    os.system("pip2 install requests")
     os.system("pip2 install mechanize")
-    os.system("python2 Zsasi.py")
-    
-    try:
-    	os.mkdir("/sdcard/infect-tool")
+    os.system("python2 infect.xo")
+
+try:
+    os.mkdir("/sdcard/infect-tool")
 except OSError:
     pass
+
 abm = """
-'\033[31m'\033[1;97m      ____  ____   _____  ___    __ ______ 
-\033[1;97m     |    ||    \ |     |/  _]  /  ]      |
+\033[1;97m      ____  ____   _____  ___    __ ______ 
+\033[1;97m   "\033[31m"  |    ||    \ |     |/  _]  /  ]      |
 \033[1;93m      |  | |  _  ||   __/  [_  /  /|      |
 \033[1;93m      |  | |  |  ||  |_|    _]/  / |_|  |_|
 \033[1;93m      |  | |  |  ||   _]   [_/   \_  |  |  
@@ -60,4 +61,3 @@ def mx():
         main()
 if __name__ == '__main__':
     main()
-
